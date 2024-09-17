@@ -18,13 +18,16 @@
 /* @media screen and (width <= var(--tablet)) { */
 @media screen and (width <= 769px) {
   .viewbox-column-dobby {
-    min-height: calc(calc(var(--view-height) / 10) * 3);
+    /* min-height: calc(calc(var(--view-height) / 10) * 3); */
+    min-height: var(--dobby-view-height);
   }
   .viewbox-column-cloche {
-    min-height: calc(calc(var(--view-height) / 10) * 1);
+    /* min-height: calc(calc(var(--view-height) / 10) * 1); */
+    min-height: var(--cloche-button-view-height);
   }
   .viewbox-column-interaction {
-    min-height: calc(calc(var(--view-height) / 10) * 5.9);
+    /* min-height: calc(calc(var(--view-height) / 10) * 5.9); */
+    min-height: var(--interaction-view-height);
   }
 }
 

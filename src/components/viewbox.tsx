@@ -5,7 +5,7 @@ import { ClocheButton } from "./cloche-button.tsx";
 import { InteractionBox } from "./interaction-box.tsx";
 
 export const ViewBox: FC<BaseProps> = () => (
-  <section class="section container is-fluid pt-4 pb-0 viewbox">
+  <section class="section container is-fluid pl-4 pr-4 pt-4 pb-0 viewbox">
     <div class="columns is-multiline">
       <div class="column is-half-desktop viewbox-column-dobby">
         <DobbyAI />

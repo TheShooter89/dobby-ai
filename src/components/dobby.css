@@ -1,40 +1,9 @@
-.dobby-ai {
+.dobby-columns {
+  font-family: Oswald, sans-serif;
+  min-height: var(--dobby-view-height);
+}
+
+.dobby-image {
   font-family: Oswald, sans-serif;
 }
 
-.dobby-section {
-  padding-left: 0.25rem !important;
-}
-
-.dobby-container {
-  margin-left: 0.25rem !important;
-}
-
-.dobby-logo {
-  /* width: 50vw; */
-}
-
-.dobby-grid {
-  height: 80vh;
-  /* padding-top: 8vh; */
-}
-
-.dobby-grid-logo-cell {
-  /* padding-top: 8vh; */
-}
-
-@media screen and (width <= 850px) {
-  .dobby-logo {
-    /* width: 50vw; */
-  }
-
-  .dobby-section {
-    padding-left: 0.25rem !important;
-    padding-right: 0.25rem !important;
-  }
-
-  .dobby-container {
-    padding-left: 0.25rem !important;
-    padding-right: 0.25rem !important;
-  }
-}

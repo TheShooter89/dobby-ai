@@ -14,6 +14,10 @@
   --fullhd: 1408px;
 
   --view-height: calc(100vh - var(--bulma-navbar-height));
+
+  --dobby-view-height: calc(calc(var(--view-height) / 10) * 3);
+  --cloche-button-view-height: calc(calc(var(--view-height) / 10) * 1);
+  --interaction-view-height: calc(calc(var(--view-height) / 10) * 5.9);
 }
 
 /* INFO: GLOBAL styles, affecting/related to BOTH Navbar and App components */
