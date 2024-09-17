@@ -6,16 +6,16 @@ import { InteractionBox } from "./interaction-box.tsx";
 
 export const ViewBox: FC<BaseProps> = () => (
   <section class="section container is-fluid pt-4 pb-0 viewbox">
-    <div class="columns">
-      <div class="column viewbox-column-dobby">
+    <div class="columns is-multiline">
+      <div class="column is-half-desktop viewbox-column-dobby">
         <DobbyAI />
       </div>
 
-      <div class="column viewbox-column-cloche">
+      <div class="column is-half-desktop viewbox-column-cloche">
         <ClocheButton />
       </div>
 
-      <div class="column viewbox-column-interaction">
+      <div class="column is-half-desktop is-offset-half viewbox-column-interaction">
         <InteractionBox />
       </div>
     </div>
