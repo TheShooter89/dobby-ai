@@ -1,5 +1,9 @@
 run:
 	bun run dev
 
-buildrun:
+build:
 	bunx --bun vite build
+
+deploy:
+	bunx --bun vite build
+	bun run deploy
