@@ -6,6 +6,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --mobile: 768px;
+  --tablet: 769px;
+  --desktop: 1024px;
+  --widescreen: 1216px;
+  --fullhd: 1408px;
+
+  --view-height: calc(100vh - var(--bulma-navbar-height));
 }
 
 /* INFO: GLOBAL styles, affecting/related to BOTH Navbar and App components */

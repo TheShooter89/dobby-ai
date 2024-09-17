@@ -16,3 +16,6 @@
   background-color: unset;
 }
 
+.phantom-navbar {
+  z-index: 1;
+}

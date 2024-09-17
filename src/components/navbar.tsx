@@ -28,6 +28,6 @@ export const Navbar: FC<BaseProps> = () => (
 );
 
 export const PhantomNavbar: FC<BaseProps> = () => (
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar phantom-navbar" role="navigation" aria-label="main navigation">
   </nav>
 );

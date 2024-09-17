@@ -2,6 +2,13 @@
  *       or relates to App childrens, if it affects Navbar or
  *       other root-level components, it goes into styles.css*/
 .app {
-  font-family: Oswald, sans-serif;
+  font-family: Oswald, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  height: var(--view-height);
 }
+
+.app-column-dobby {}
+
+.app-column-cloche {}
+
+.app-column-interaction {}
 
