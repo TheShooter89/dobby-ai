@@ -1,0 +1,30 @@
+/* INFO: do NOT add golbal styles here, only styles that affects
+ *       or relates to App childrens, if it affects Navbar or
+ *       other root-level components, it goes into styles.css*/
+.viewbox {
+  margin-top: var(--bulma-navbar-height);
+  /* height: var(--view-height); */
+  min-height: var(--view-height);
+  /* height: 100vh; */
+  overflow: scroll;
+}
+
+.viewbox-column-dobby {}
+
+.viewbox-column-cloche {}
+
+.viewbox-column-interaction {}
+
+/* @media screen and (width <= var(--tablet)) { */
+@media screen and (width <= 769px) {
+  .viewbox-column-dobby {
+    min-height: calc(calc(var(--view-height) / 10) * 3);
+  }
+  .viewbox-column-cloche {
+    min-height: calc(calc(var(--view-height) / 10) * 1);
+  }
+  .viewbox-column-interaction {
+    min-height: calc(calc(var(--view-height) / 10) * 5.9);
+  }
+}
+
