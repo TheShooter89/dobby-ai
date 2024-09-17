@@ -1,6 +1,7 @@
 :root {
   font-family: Oswald, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.87);
+  color-scheme: light dark;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,4 +24,10 @@
 /* INFO: GLOBAL styles, affecting/related to BOTH Navbar and App components */
 .oswald-font {
   font-family: Oswald, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: white;
+  }
 }
