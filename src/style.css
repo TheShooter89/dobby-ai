@@ -35,43 +35,9 @@ h1 {
   line-height: 1.1;
 }
 
-/* my custom styles */
+/* INFO: my custom styles */
 .oswald-font {
   font-family: "Oswald", sans-serif !important;
-}
-
-.navbar-burger {
-  width: unset;
-  color: unset;
-}
-
-.navbar-burger:hover {
-  color: unset;
-  background-color: unset;
-}
-
-.navbar-burger:visited {
-  color: unset;
-  background-color: unset;
-}
-
-.dobby-logo {
-  /* width: 50vw; */
-}
-
-.dobby-grid {
-  height: 80vh;
-  padding-top: 8vh;
-}
-
-.dobby-grid-logo-cell {
-  padding-top: 8vh;
-}
-
-@media screen and (width <= 850px) {
-  .dobby-logo {
-    width: 55vw;
-  }
 }
 
 @media (prefers-color-scheme: light) {
