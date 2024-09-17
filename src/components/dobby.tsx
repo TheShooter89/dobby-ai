@@ -12,7 +12,7 @@ export const DobbyAI: FC<BaseProps> = () => (
 
     <div class="column pl-0 pt-5 is-two-thirds is-two-thirds-mobile">
       {/* <p id="dobby-bubble-text" class="is-size-4 is-size-6-mobile oswald-font">Un testo molto lungo per fare gli auguri a mia sorella, da mostrare animandolo come una macchina da scrivere, il famoso effetto typewriter</p> */}
-      <p id="dobby-bubble-text" class="is-size-4 is-size-6-mobile oswald-font"></p>
+      <p id="dobby-bubble-text" class="is-size-4 is-size-6-mobile pl-3 oswald-font"></p>
     </div>
   </div>
 );

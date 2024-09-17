@@ -24,4 +24,5 @@ const dobby_bubble_text = document.getElementById("dobby-bubble-text");
 // const dobby_text = "Augurio estremamente lungo da far typewriter";
 const dobby_text = "Un testo molto lungo per fare gli auguri a mia sorella, da mostrare animandolo come una macchina da scrivere, il famoso effetto typewriter";
 
-typewrite_effect(dobby_bubble_text, dobby_text, dobby_text.split(""), "", 100);
+setTimeout(() => typewrite_effect(dobby_bubble_text, dobby_text, dobby_text.split(""), "", 65), 1000);
+// typewrite_effect(dobby_bubble_text, dobby_text, dobby_text.split(""), "", 100);
