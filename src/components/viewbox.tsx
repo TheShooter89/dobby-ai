@@ -12,7 +12,9 @@ export const ViewBox: FC<BaseProps> = () => (
       </div>
 
       <div class="column level mb-0 is-half-desktop viewbox-column-cloche">
-        <ClocheButton />
+        <div class="level-item">
+          <ClocheButton />
+        </div>
       </div>
 
       <div class="column is-half-desktop is-offset-half viewbox-column-interaction">
