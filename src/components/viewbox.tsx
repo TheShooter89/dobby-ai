@@ -11,7 +11,7 @@ export const ViewBox: FC<BaseProps> = () => (
         <DobbyAI />
       </div>
 
-      <div class="column is-half-desktop viewbox-column-cloche">
+      <div class="column level mb-0 is-half-desktop viewbox-column-cloche">
         <ClocheButton />
       </div>
 
