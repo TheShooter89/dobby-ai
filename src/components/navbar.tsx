@@ -1,11 +1,10 @@
 import { h, FC, BaseProps } from "tsx-dom";
 
 interface NavbarProps extends BaseProps {
-  isPhantom?: boolean;
 }
 
-export const Navbar: FC<NavbarProps> = ({ isPhantom = false }) => (
-  <nav class={`navbar${isPhantom ? " phantom-navbar" : " is-fixed-top"}`} role="navigation" aria-label="main navigation">
+export const Navbar: FC<NavbarProps> = () => (
+  <nav class={`navbar is-fixed-top`} role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <p class="navbar-item oswald-font is-size-3-tablet is-size-4-mobile">
         <span class="icon-text">

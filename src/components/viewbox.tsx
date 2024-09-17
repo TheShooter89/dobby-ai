@@ -4,11 +4,8 @@ import { DobbyAI } from "./dobby.tsx";
 import { ClocheButton } from "./cloche-button.tsx";
 import { InteractionBox } from "./interaction-box.tsx";
 
-import { Navbar } from "./navbar.tsx";
-
 export const ViewBox: FC<BaseProps> = () => (
   <section class="section container is-fluid pt-4 pb-0 viewbox">
-    {/* <Navbar isPhantom={true} /> */}
     <div class="columns">
       <div class="column viewbox-column-dobby">
         <DobbyAI />
