@@ -1,5 +1,9 @@
 import { h, FC, BaseProps } from "tsx-dom";
 
-export const ClocheButton: FC<BaseProps> = () => (
-  <button class="button is-primary oswald-font cloche-button">ClocheButton</button>
+interface ClocheButtonProps extends BaseProps {
+  text?: string
+}
+
+export const ClocheButton: FC<ClocheButtonProps> = ({ text = "ClocheButton" }: ClocheButtonProps) => (
+  <button class="button is-primary oswald-font cloche-button">{text}</button>
 );
