@@ -10,10 +10,11 @@ import dobby_logo from "/dobby.svg";
 
 import { h, FC, BaseProps } from "tsx-dom";
 
-import { Navbar } from "./components/navbar.tsx";
+import { Navbar, PhantomNavbar } from "./components/navbar.tsx";
 import { App } from "./components/app.tsx";
 
 const body = document.querySelector<HTMLDivElement>('body');
 
 body?.insertBefore(<App />, body.firstChild);
+body?.insertBefore(<PhantomNavbar />, body.firstChild);
 body?.insertBefore(<Navbar />, body.firstChild);
