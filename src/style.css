@@ -18,7 +18,7 @@
 
   --dobby-view-height: calc(calc(var(--view-height) / 10) * 3);
   --cloche-button-view-height: calc(calc(var(--view-height) / 10) * 1);
-  --interaction-view-height: calc(calc(var(--view-height) / 10) * 5.9);
+  --interaction-view-height: calc(calc(var(--view-height) / 10) * 5.8);
 }
 
 /* INFO: GLOBAL styles, affecting/related to BOTH Navbar and App components */

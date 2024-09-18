@@ -1,3 +1,13 @@
 .interaction-box {
   font-family: Oswald, sans-serif;
 }
+
+.potter-map-image {
+  max-width: 20vw;
+}
+
+@media screen and (width <= 769px) {
+  .potter-map-image {
+    max-width: 60vw;
+  }
+}

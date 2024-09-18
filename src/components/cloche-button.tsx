@@ -5,5 +5,5 @@ interface ClocheButtonProps extends BaseProps {
 }
 
 export const ClocheButton: FC<ClocheButtonProps> = ({ text = "ClocheButton" }: ClocheButtonProps) => (
-  <button class="button is-primary oswald-font cloche-button">{text}</button>
+  <button id="cloche-button" class="button is-primary oswald-font cloche-button cloche-button-hidden">{text}</button>
 );
