@@ -4,6 +4,7 @@ import './components/viewbox.css'
 import './components/dobby.css'
 import './components/cloche-button.css'
 import './components/interaction-box.css'
+import './components/memory-game.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import dobby_logo from "/dobby.svg";

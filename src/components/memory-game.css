@@ -1,3 +1,5 @@
 .memory-game {
   min-height: var(--dobby-view-height);
+  min-width: 85vw;
+  max-width: 90vw;
 }
