@@ -17,8 +17,12 @@ export const ViewBox: FC<BaseProps> = () => (
         </div>
       </div>
 
-      <div class="column is-half-desktop is-offset-half viewbox-column-interaction">
-        <InteractionBox />
+      <div class="column is-half-desktop is-offset-half pt-0 pb-0 viewbox-column-interaction">
+        <div class="level">
+          <div class="level-item viewbox-level-item-interaction ">
+            <InteractionBox />
+          </div>
+        </div>
       </div>
     </div>
   </section>

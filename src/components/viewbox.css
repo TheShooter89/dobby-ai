@@ -15,6 +15,10 @@
 
 .viewbox-column-interaction {}
 
+.viewbox-level-item-interaction {
+  min-height: var(--interaction-view-height);
+}
+
 /* @media screen and (width <= var(--tablet)) { */
 @media screen and (width <= 769px) {
   .viewbox-column-dobby {
