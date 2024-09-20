@@ -7,5 +7,5 @@ export default defineConfig({
     jsxFactory: "h",
     jsxFragment: "Fragment",
     jsx: "transform"
-  }
+  },
 })
