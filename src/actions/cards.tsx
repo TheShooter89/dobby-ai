@@ -48,3 +48,6 @@ export function fold_card(card_id: string) {
   card_element?.appendChild(<MemoryGameCellDynamic id={card_id} figure={Figure.Back} click={handle_card_unfold} />);
 }
 
+export function pin_card(card_id: string) {
+  console.log('pinning card ' + card_id);
+}

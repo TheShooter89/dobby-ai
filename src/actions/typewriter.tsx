@@ -10,7 +10,7 @@ export const show_button = () => {
   console.log('removed cloche-button-hidden class from button!');
 };
 
-export const typewrite_effect = (element: HTMLElement, text: string, split_str: string, accumulator = "", timeout = 200) => {
+export const typewrite_effect = (element: HTMLElement, text: string, split_str: string[], accumulator = "", timeout = 200) => {
   let acc = accumulator;
 
 
@@ -27,4 +27,12 @@ export const typewrite_effect = (element: HTMLElement, text: string, split_str: 
       show_button();
     }, 850);
   }
+}
+
+export function animate_text(element: HTMLElement, text: string, timeout = 65) {
+  //
+  let text_split = text.split("");
+  let accumulator = "";
+
+  typewrite_effect(element, text, text_split, accumulator, timeout);
 }

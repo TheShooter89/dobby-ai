@@ -33,6 +33,8 @@ export const FIGURES_LIST = [
 export const CURRENT_FIGURES_MAP = new Map<string, Figure>;
 export const CELL_LIST: Array<JSX.Element> = [];
 
+export let FIRST_OPENED_CARD;
+
 const shuffle = (array: any[]) => {
   return array.sort(() => Math.random() - 0.5);
 };
