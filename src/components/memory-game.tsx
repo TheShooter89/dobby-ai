@@ -29,10 +29,11 @@ export enum Figure {
 interface MemoryGameCellDynamicProps extends BaseProps {
   id?: string
   figure?: Figure
+  pinned?: boolean
   click?(event: Event): any
 }
 
-export const MemoryGameCellDynamic: FC<MemoryGameCellDynamicProps> = ({ id = "none", figure, click = default_cell_click }: MemoryGameCellDynamicProps) => {
+export const MemoryGameCellDynamic: FC<MemoryGameCellDynamicProps> = ({ id = "none", figure, pinned = false, click = default_cell_click }: MemoryGameCellDynamicProps) => {
   //
   switch (figure) {
     case Figure.Blank:
@@ -42,37 +43,37 @@ export const MemoryGameCellDynamic: FC<MemoryGameCellDynamicProps> = ({ id = "no
 
     case Figure.Back:
       return (
-        <MemoryGameCell id={id} src={card_back} click={click} />
+        <MemoryGameCell id={id} src={card_back} pinned={pinned} click={click} />
       );
 
     case Figure.First:
       return (
-        <MemoryGameCell id={id} src={card_figured_1} click={click} />
+        <MemoryGameCell id={id} src={card_figured_1} pinned={pinned} click={click} />
       );
 
     case Figure.Second:
       return (
-        <MemoryGameCell id={id} src={card_figured_2} click={click} />
+        <MemoryGameCell id={id} src={card_figured_2} pinned={pinned} click={click} />
       );
 
     case Figure.Third:
       return (
-        <MemoryGameCell id={id} src={card_figured_3} click={click} />
+        <MemoryGameCell id={id} src={card_figured_3} pinned={pinned} click={click} />
       );
 
     case Figure.Fourth:
       return (
-        <MemoryGameCell id={id} src={card_figured_4} click={click} />
+        <MemoryGameCell id={id} src={card_figured_4} pinned={pinned} click={click} />
       );
 
     case Figure.Fifth:
       return (
-        <MemoryGameCell id={id} src={card_figured_5} click={click} />
+        <MemoryGameCell id={id} src={card_figured_5} pinned={pinned} click={click} />
       );
 
     default:
       return (
-        <MemoryGameCell id={id} src={card_back} click={click} />
+        <MemoryGameCell id={id} src={card_back} pinned={pinned} click={click} />
       );
   }
 };
@@ -84,14 +85,18 @@ export function default_cell_click(event: Event) {
 interface MemoryGameCellProps extends BaseProps {
   id: string
   src: string
+  pinned?: boolean
   click?(event: Event): any
 }
 
-export const MemoryGameCell: FC<MemoryGameCellProps> = ({ id, src, click = default_cell_click }: MemoryGameCellProps) => (
-  <figure onClick={click} class="image memory-game-cell-image">
-    <img src={src} data-card-id={id} />
-  </figure>
-);
+export const MemoryGameCell: FC<MemoryGameCellProps> = ({ id, src, pinned = false, click = default_cell_click }: MemoryGameCellProps) => {
+  //
+  return (
+    <figure class="image memory-game-cell-image">
+      <img id={id + '-img'} onClick={click} src={src} data-card-id={id} data-card-pinned={pinned} />
+    </figure>
+  )
+};
 
 
 export const MemoryGame: FC<BaseProps> = () => (
