@@ -27,7 +27,7 @@ export const typewrite_effect = (element: HTMLElement, text: string, split_str: 
     acc += shifted_str;
     console.log('acc: ', acc);
     element.innerHTML += shifted_str;
-    setTimeout(() => typewrite_effect(element, text, split_str, acc, timeout), timeout);
+    setTimeout(() => typewrite_effect(element, text, split_str, acc, timeout, call_after), timeout);
     // typewrite_effect(element, text, split_str, acc, timeout);
   } else {
     setTimeout(() => {

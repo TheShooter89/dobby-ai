@@ -38,6 +38,6 @@ init_cell_list();
 console.log('past init_cell_list call');
 
 setTimeout(() => {
-  animate_text(dobby_bubble_element, dobby_bubble_text_1);
-  show_button();
+  animate_text(dobby_bubble_element, dobby_bubble_text_1, 65, show_button);
+  // show_button();
 }, 1000);

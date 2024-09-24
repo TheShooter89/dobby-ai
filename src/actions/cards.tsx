@@ -7,6 +7,7 @@ import { handle_card_unfold, handle_card_fold, load_birthday_gift, update_intera
 import { get_bubble_element } from "../actions/text_bubble.tsx";
 import { animate_text } from "../actions/typewriter.tsx";
 import { BOARD_STATE } from "../state.tsx";
+import { bubble_text_winning } from "../content.tsx";
 
 enum Figure {
   Blank = "blank",
@@ -140,12 +141,15 @@ export function handle_game_end() {
   update_interaction_box_with_element(celebration_element);
 
   let bubble_text = get_bubble_element();
-  animate_text(bubble_text, "winning");
-  setTimeout((e) => {
+  animate_text(bubble_text, bubble_text_winning, 65, () => {
     //
-    const new_element = (<BirthdayGift />);
-    update_interaction_box_with_element(new_element);
-  }, 1500);
+    setTimeout((e) => {
+      console.log("delayed BirthdayGift rendering")
+      const new_element = (<BirthdayGift />);
+      update_interaction_box_with_element(new_element);
+    }, 900);
+  });
+
 
   // const new_element = (<BirthdayGift />);
   // update_interaction_box_with_element(new_element);

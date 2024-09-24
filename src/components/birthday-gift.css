@@ -1,9 +1,14 @@
 .birthday-gift {
   font-family: Oswald, sans-serif;
-  min-height: var(--dobby-view-height);
 }
 
-.dobby-image {
-  font-family: Oswald, sans-serif;
+.birthday-wish-video {
+  margin-top: 1.25rem;
 }
 
+/* @media screen and (width <= var(--tablet)) { */
+@media screen and (width <= 769px) {
+  .birthday-wish-video  {
+    margin-top: 1.25rem;
+  }
+}

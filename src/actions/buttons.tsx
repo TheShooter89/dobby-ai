@@ -9,6 +9,8 @@ import { get_bubble_element } from "../actions/text_bubble.tsx";
 import { BOARD_STATE } from "../state.tsx";
 import { animate_text, hide_button } from "./typewriter.tsx";
 
+import { bubble_text_explain } from "../content.tsx";
+
 export function update_interaction_box_with_element(new_child: JSX.Element) {
   const target = document.getElementById("interaction-box") as HTMLDivElement;
 
@@ -38,7 +40,7 @@ export function load_memory_game(this: HTMLElement, event: Event) {
   hide_button();
 
   let bubble_text = get_bubble_element();
-  animate_text(bubble_text, "explaining");
+  animate_text(bubble_text, bubble_text_explain);
 
   const target = document.getElementById("interaction-box") as HTMLDivElement;
 
