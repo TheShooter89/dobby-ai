@@ -4,7 +4,7 @@ export const dobby_bubble_text_1 = "Ciao Erica! Sono Dobby, un elfo domestico vi
 export const bubble_text_start = "Ciao Erica! Sono Dobby, un elfo domestico virtuale. Tuo fratello mi ha programmato per farti gli auguri, ma credo di aver fatto un pasticcio...troppa Burrobirra ieri sera...";
 // export const bubble_text_star = "bubble_text_start ";
 
-export const bubble_text_explain = "Deve essere qui sotto... è che, ehrmm, mi si sono tutte mischiate, ho provato a riordinarle con la bacchetta di tuo fratello, ma ora si rifiutano di girarsi se non in coppia...se troviamo tutte le coppie riesco a rimettere tutto a posto (forse)!";
+export const bubble_text_explain = "Deve essere qui sotto... è che, ehrmm, mi si sono tutte mischiate, ho provato a riordinarle con la bacchetta di tuo fratello, ma ora si rifiutano di girarsi se non in coppia...se troviamo tutte le coppie riesco a rimettere tutto a posto (forse)... Cliccaci sopra per girarle!";
 // export const bubble_text_explain = "bubble_text_explain ";
 
 export const bubble_text_winning = "Ce l'hai fatta! Grandissima, grazie mille! Eccolo dov'era, il biglietto! Qui sotto!";
