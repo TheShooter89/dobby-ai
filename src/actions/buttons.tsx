@@ -3,9 +3,11 @@ import { h, FC, BaseProps } from "tsx-dom";
 import potter_map from "/potter-map.svg"
 
 import { MemoryGame } from "../components/memory-game.tsx";
-import { unfold_card, fold_card, handle_card_check, } from "../actions/cards.tsx";
-import { BOARD_STATE } from "../state.tsx";
 import { BirthdayGift } from "../components/birthday-gift.tsx";
+import { unfold_card, fold_card, handle_card_check, } from "../actions/cards.tsx";
+import { get_bubble_element } from "../actions/text_bubble.tsx";
+import { BOARD_STATE } from "../state.tsx";
+import { animate_text, hide_button } from "./typewriter.tsx";
 
 export function update_interaction_box_with_element(new_child: JSX.Element) {
   const target = document.getElementById("interaction-box") as HTMLDivElement;
@@ -32,6 +34,12 @@ export function load_birthday_gift(this: HTMLElement, event: Event) {
 
 export function load_memory_game(this: HTMLElement, event: Event) {
   event.preventDefault();
+
+  hide_button();
+
+  let bubble_text = get_bubble_element();
+  animate_text(bubble_text, "explaining");
+
   const target = document.getElementById("interaction-box") as HTMLDivElement;
 
   while (target.firstChild) {

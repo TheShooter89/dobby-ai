@@ -8,7 +8,17 @@ export const show_button = () => {
   console.log('removed cloche-button-hidden class from button!');
 };
 
-export const typewrite_effect = (element: HTMLElement, text: string, split_str: string[], accumulator = "", timeout = 200) => {
+export const hide_button = () => {
+  const btn = document.getElementById("cloche-button");
+
+  btn?.classList.add("cloche-button-hidden");
+
+  console.log('removed cloche-button-hidden class from button!');
+};
+
+export const default_call_after = () => console.log("[typewriter] default call_after callback called");
+
+export const typewrite_effect = (element: HTMLElement, text: string, split_str: string[], accumulator = "", timeout = 200, call_after = default_call_after) => {
   let acc = accumulator;
 
 
@@ -22,15 +32,17 @@ export const typewrite_effect = (element: HTMLElement, text: string, split_str: 
   } else {
     setTimeout(() => {
       console.log("SHOW BUTTON");
-      show_button();
+      call_after();
     }, 850);
   }
 }
 
-export function animate_text(element: HTMLElement, text: string, timeout = 65) {
+export function animate_text(element: HTMLElement, text: string, timeout = 65, call_after = default_call_after) {
   //
   let text_split = text.split("");
   let accumulator = "";
 
-  typewrite_effect(element, text, text_split, accumulator, timeout);
+  element.innerHTML = "";
+
+  typewrite_effect(element, text, text_split, accumulator, timeout, call_after);
 }

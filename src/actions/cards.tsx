@@ -2,7 +2,10 @@ import { h, FC, BaseProps } from "tsx-dom";
 
 import { MemoryGameCellDynamic, } from "../components/memory-game.tsx";
 import { BirthdayGift } from "../components/birthday-gift.tsx";
+import { Celebration } from "../components/celebration.tsx";
 import { handle_card_unfold, handle_card_fold, load_birthday_gift, update_interaction_box_with_element } from "../actions/buttons.tsx";
+import { get_bubble_element } from "../actions/text_bubble.tsx";
+import { animate_text } from "../actions/typewriter.tsx";
 import { BOARD_STATE } from "../state.tsx";
 
 enum Figure {
@@ -133,6 +136,17 @@ export function handle_game_end() {
   console.log('ALL FIGURES FOUND, GAME ENDED');
   // load_birthday_gift();
   // const new_element = (<MaraudersMap />);
-  const new_element = (<BirthdayGift />);
-  update_interaction_box_with_element(new_element);
+  const celebration_element = (<Celebration />);
+  update_interaction_box_with_element(celebration_element);
+
+  let bubble_text = get_bubble_element();
+  animate_text(bubble_text, "winning");
+  setTimeout((e) => {
+    //
+    const new_element = (<BirthdayGift />);
+    update_interaction_box_with_element(new_element);
+  }, 1500);
+
+  // const new_element = (<BirthdayGift />);
+  // update_interaction_box_with_element(new_element);
 }

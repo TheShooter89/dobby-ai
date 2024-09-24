@@ -7,6 +7,7 @@ import './components/interaction-box.css'
 import './components/memory-game.css'
 import './components/marauders-map.css'
 import './components/birthday-gift.css'
+import './components/celebration.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import dobby_logo from "/dobby.svg";
@@ -18,7 +19,8 @@ import { init_cell_list } from "./state.tsx";
 import { Navbar } from "./components/navbar.tsx";
 import { ViewBox } from "./components/viewbox.tsx";
 
-import { animate_text } from "./actions/typewriter.tsx";
+import { animate_text, show_button } from "./actions/typewriter.tsx";
+import { explain_game } from "./actions/text_bubble.tsx";
 
 import { dobby_bubble_text_1 } from "./content.tsx";
 
@@ -35,4 +37,7 @@ init_cell_list();
 
 console.log('past init_cell_list call');
 
-setTimeout(() => animate_text(dobby_bubble_element, dobby_bubble_text_1), 1000);
+setTimeout(() => {
+  animate_text(dobby_bubble_element, dobby_bubble_text_1);
+  show_button();
+}, 1000);
