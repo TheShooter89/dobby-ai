@@ -7,9 +7,6 @@ import card_figured_3 from "/card_figured_3.svg";
 import card_figured_4 from "/card_figured_4.svg";
 import card_figured_5 from "/card_figured_5.svg";
 
-// import { Figure } from "../main.tsx";
-import { handle_card_unfold, handle_card_fold } from "../actions/buttons.tsx";
-
 import { CELL_LIST, CURRENT_FIGURES_MAP, FIGURES_LIST } from "../state.tsx";
 
 export const TOTAL_CARDS = 15;

@@ -1,7 +1,5 @@
 import { h, FC, BaseProps } from "tsx-dom";
 
-const dobby_text = "Un testo molto lungo per fare gli auguri a mia sorella, da mostrare animandolo come una macchina da scrivere, il famoso effetto typewriter";
-
 export const show_button = () => {
   const btn = document.getElementById("cloche-button");
 

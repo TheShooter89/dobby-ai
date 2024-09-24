@@ -1,0 +1,9 @@
+.marauders-map {
+  max-width: 20vw;
+}
+
+@media screen and (width <= 769px) {
+  .marauders-map  {
+    max-width: 60vw;
+  }
+}

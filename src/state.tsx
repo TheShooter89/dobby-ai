@@ -33,15 +33,25 @@ export const FIGURES_LIST = [
 export const CURRENT_FIGURES_MAP = new Map<string, Figure>;
 export const CELL_LIST: Array<JSX.Element> = [];
 
-export let FIRST_OPENED_CARD: string;
-export let SECOND_OPENED_CARD: string;
+interface BoardState {
+  first_card: string | null,
+  second_card: string | null,
+  locked: boolean,
+  pinned_cards: Map<string, boolean>,
+  matches_found: Map<Figure, boolean>
+}
 
-export let LOCKED_BOARD: boolean = false;
-
-export let BOARD_STATE = {
+export let BOARD_STATE: BoardState = {
   first_card: null,
   second_card: null,
-  locked: false
+  locked: false,
+  pinned_cards: new Map<string, boolean>(),
+  matches_found: new Map<Figure, boolean>([
+    [Figure.First, false],
+    [Figure.Second, false],
+    [Figure.Third, false],
+    [Figure.Fourth, false]
+  ])
 };
 
 const shuffle = (array: any[]) => {

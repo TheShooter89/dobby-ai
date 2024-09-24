@@ -4,7 +4,7 @@ import { DobbyAI } from "./dobby.tsx";
 import { ClocheButton } from "./cloche-button.tsx";
 import { InteractionBox } from "./interaction-box.tsx";
 
-import { load_memory_game } from "../actions/buttons.tsx";
+import { load_memory_game, load_birthday_gift } from "../actions/buttons.tsx";
 
 export const ViewBox: FC<BaseProps> = () => (
   <section class="section container is-fluid pl-4 pr-4 pt-4 pb-0 viewbox">
@@ -15,7 +15,7 @@ export const ViewBox: FC<BaseProps> = () => (
 
       <div class="column level mb-0 is-half-desktop viewbox-column-cloche">
         <div class="level-item">
-          <ClocheButton text="ALOHOMORA" onclick={load_memory_game} />
+          <ClocheButton text="ALOHOMORA ('ndemo vanti!)" onclick={load_memory_game} />
         </div>
       </div>
 

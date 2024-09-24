@@ -26,6 +26,10 @@
   font-family: Oswald, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+figure, img {
+  touch-action: manipulation !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     background-color: white;
