@@ -3,3 +3,17 @@
   min-width: 85vw;
   max-width: 90vw;
 }
+
+.memory-game-grid {
+  min-width: 30vw;
+  max-width: 40vw;
+}
+
+/* @media screen and (width <= var(--tablet)) { */
+@media screen and (width <= 769px) {
+  .memory-game-grid {
+    min-width: unset;
+    max-width: unset;
+  }
+}
+

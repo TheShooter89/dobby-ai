@@ -97,8 +97,8 @@ export const MemoryGameCell: FC<MemoryGameCellProps> = ({ id, src, pinned = fals
 
 
 export const MemoryGame: FC<BaseProps> = () => (
-  <div class="fixed-grid has-3-cols-mobile memory-game">
-    <div class="grid">
+  <div class="fixed-grid has-3-cols has-3-cols-mobile memory-game">
+    <div class="grid memory-game-grid">
       {CELL_LIST}
     </div>
   </div>
