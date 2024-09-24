@@ -1,6 +1,7 @@
 import { h, FC, BaseProps } from "tsx-dom";
 
 import { MemoryGameCellDynamic, } from "../components/memory-game.tsx";
+import { BirthdayGift } from "../components/birthday-gift.tsx";
 import { handle_card_unfold, handle_card_fold, load_birthday_gift, update_interaction_box_with_element } from "../actions/buttons.tsx";
 import { BOARD_STATE } from "../state.tsx";
 
@@ -131,6 +132,7 @@ export function check_game_ended() {
 export function handle_game_end() {
   console.log('ALL FIGURES FOUND, GAME ENDED');
   // load_birthday_gift();
-  const new_element = (<MaraudersMap />);
+  // const new_element = (<MaraudersMap />);
+  const new_element = (<BirthdayGift />);
   update_interaction_box_with_element(new_element);
 }

@@ -5,6 +5,7 @@ import potter_map from "/potter-map.svg"
 import { MemoryGame } from "../components/memory-game.tsx";
 import { unfold_card, fold_card, handle_card_check, } from "../actions/cards.tsx";
 import { BOARD_STATE } from "../state.tsx";
+import { BirthdayGift } from "../components/birthday-gift.tsx";
 
 export function update_interaction_box_with_element(new_child: JSX.Element) {
   const target = document.getElementById("interaction-box") as HTMLDivElement;
@@ -23,11 +24,7 @@ export function update_interaction_box_with_element(new_child: JSX.Element) {
 export function load_birthday_gift(this: HTMLElement, event: Event) {
   event.preventDefault();
 
-  const new_element = (
-    <figure class="image potter-map-image">
-      <img src={potter_map} />
-    </figure>
-  );
+  const new_element = (<BirthdayGift />);
   console.log('new_element', new_element);
 
   update_interaction_box_with_element(new_element);

@@ -16,6 +16,7 @@ export const ViewBox: FC<BaseProps> = () => (
       <div class="column level mb-0 is-half-desktop viewbox-column-cloche">
         <div class="level-item">
           <ClocheButton text="ALOHOMORA ('ndemo vanti!)" onclick={load_memory_game} />
+          {/* <ClocheButton text="ALOHOMORA ('ndemo vanti!)" onclick={load_birthday_gift} /> */}
         </div>
       </div>
 

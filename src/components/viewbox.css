@@ -17,6 +17,8 @@
 
 .viewbox-level-item-interaction {
   min-height: var(--interaction-view-height);
+  /* disable default 'level' behaviour of vertically align items */
+  align-items: unset;
 }
 
 /* @media screen and (width <= var(--tablet)) { */
